@@ -1,0 +1,18 @@
+{
+  "default":"en",
+  "en":{
+    "appName":"RCT Labeler",
+    "mainLbl":"Main Screen Name",
+    "mainLabel":"RCT-Labeler",
+    "swi1":"Switch 1",
+    "swi2":"Switch 2",
+    "swi3":"Switch 3",
+    "swi4":"Switch 4",
+    "swi5":"Switch 5",
+	"label1":"Label 1",
+    "label2":"Label 2",
+    "label3":"Label 3",
+    "label4":"Label 4",
+    "label5":"Label 5"
+  }
+}
