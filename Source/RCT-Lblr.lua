@@ -27,7 +27,7 @@ local function setLanguage()
     local file = io.readall("Apps/Lang/RCT-Lblr.jsn")
     local obj = json.decode(file)
     if(obj) then
-        trans21 = obj[lng] or obj[obj.default]
+        trans93 = obj[lng] or obj[obj.default]
     end
 end
 --------------------------------------------------------------------------------
@@ -112,47 +112,47 @@ local function initForm()
         addLabel({label="---     RC-Thoughts Jeti Tools      ---",font=FONT_BIG})
         
         addRow(2)
-        addLabel({label=trans21.mainLbl})
+        addLabel({label=trans93.mainLbl})
         addTextbox(lblMain,18,labelMainChanged,{width=167})
         
         addRow(2)
-        addLabel({label=trans21.label1})
+        addLabel({label=trans93.label1})
         addTextbox(lbl1,18,label1Changed,{width=167})
         
         addRow(2)
-        addLabel({label=trans21.swi1,width=220})
+        addLabel({label=trans93.swi1,width=220})
         addInputbox(sw1,true,sw1Changed)
         
         addRow(2)
-        addLabel({label=trans21.label2})
+        addLabel({label=trans93.label2})
         addTextbox(lbl2,18,label2Changed,{width=167})
         
         addRow(2)
-        addLabel({label=trans21.swi2,width=220})
+        addLabel({label=trans93.swi2,width=220})
         addInputbox(sw2,true,sw2Changed)
         
         addRow(2)
-        addLabel({label=trans21.label3})
+        addLabel({label=trans93.label3})
         addTextbox(lbl3,18,label3Changed,{width=167})
         
         addRow(2)
-        addLabel({label=trans21.swi3,width=220})
+        addLabel({label=trans93.swi3,width=220})
         addInputbox(sw3,true,sw3Changed)
         
         addRow(2)
-        addLabel({label=trans21.label4})
+        addLabel({label=trans93.label4})
         addTextbox(lbl4,18,label4Changed,{width=167})
         
         addRow(2)
-        addLabel({label=trans21.swi4,width=220})
+        addLabel({label=trans93.swi4,width=220})
         addInputbox(sw4,true,sw4Changed)
         
         addRow(2)
-        addLabel({label=trans21.label5})
+        addLabel({label=trans93.label5})
         addTextbox(lbl5,18,label5Changed,{width=167})
         
         addRow(2)
-        addLabel({label=trans21.swi5,width=220})
+        addLabel({label=trans93.swi5,width=220})
         addInputbox(sw5,true,sw5Changed)
         
         addRow(1)
@@ -184,18 +184,18 @@ local function init()
     sw3 = pLoad("sw3")
     sw4 = pLoad("sw4")
     sw5 = pLoad("sw5")
-    lblMain = pLoad("lblMain", trans21.mainLabel)
-    lbl1 = pLoad("lbl1", trans21.label1)
-    lbl2 = pLoad("lbl2", trans21.label2)
-    lbl3 = pLoad("lbl3", trans21.label3)
-    lbl4 = pLoad("lbl4", trans21.label4)
-    lbl5 = pLoad("lbl5", trans21.label5)
+    lblMain = pLoad("lblMain", trans93.mainLabel)
+    lbl1 = pLoad("lbl1", trans93.label1)
+    lbl2 = pLoad("lbl2", trans93.label2)
+    lbl3 = pLoad("lbl3", trans93.label3)
+    lbl4 = pLoad("lbl4", trans93.label4)
+    lbl5 = pLoad("lbl5", trans93.label5)
     system.registerTelemetry(1,lblMain,1,printLabel)
-    system.registerForm(1, MENU_APPS, trans21.appName, initForm)
+    system.registerForm(1, MENU_APPS, trans93.appName, initForm)
     collectgarbage()
 end
 --------------------------------------------------------------------------------
-labelerVersion = "1.0"
+labelerVersion = "1.1"
 setLanguage()
 collectgarbage()
-return {init=init, loop=loop, author="RC-Thoughts", version=labelerVersion, name=trans21.appName}
+return {init=init, loop=loop, author="RC-Thoughts", version=labelerVersion, name=trans93.appName}
